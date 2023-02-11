@@ -1,0 +1,149 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header *{
+    font-size: 20px;
+}
+
+header > * {
+    margin: 15px;
+}
+
+#topLeft{
+    position: fixed;
+    left: 0;
+}
+
+#topRight{
+    position: fixed;
+    right: 0;
+}
+#bottomLeft{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+}
+
+#bottomLeft p{
+    margin: 0;
+}
+
+#bottomRight {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+#bottomRight a, #bottomRight li{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+#bottomLeft a{
+    color: black;
+}
+
+#copyRight, #publush{
+    font-size: 13px;
+}
+#copyRight{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+h1{
+    font-size: 35px;
+    font-weight:bold;
+}
+
+.issuePicture{
+    width: 420px;
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y:auto;
+    height: 100vh;
+    scroll-behavior: smooth;
+    
+
+}
+
+.whiteSection, .turquoiseSection, .orangeSection, .yellowSection, .blueSection, .redSection {
+    text-align: center;
+    padding-top: 10%;
+    font-size: 13px;
+    font-weight: bold;
+    height: 100vh;
+    scroll-snap-align: start;
+    
+}
+
+.pinkInWhite, .whiteLinks{
+    color: #e568ac;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px
+}
+
+.pinkInWhite:hover, .whiteLinks:hover, .issueLinks:hover{
+    text-decoration: underline !important;
+}
+.whiteLinks {
+    color: white;
+}
+
+.turquoiseSection{
+    background-color: #00c1b5
+}
+.orangeSection{
+    background-color: #ff651a;
+}
+
+.yellowSection{
+    background-color: #ffbe00;
+}
+
+.blueSection{
+    background-color:#1d3fbb ;
+}
+
+.redSection{
+    background-color:#e30512 ;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
